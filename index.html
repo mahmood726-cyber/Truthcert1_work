@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TruthCert-PairwisePro: A Browser-Based Pairwise Meta-Analysis Engine with Seven Heterogeneity Estimators
+TYPE: methods  |  ESTIMAND: Pooled effect size (OR/RR/MD/SMD)
+DATA: 27,901-line single-file HTML with 7 heterogeneity estimators
+PATH: C:\HTML apps\Truthcert1_work
+
+CURRENT BODY (156 words):
+How can clinicians perform rigorous pairwise meta-analysis entirely within a web browser, without installing any statistical software or writing code? TruthCert-PairwisePro is a 27,901-line single-file HTML application implementing seven heterogeneity estimators, six publication bias tests, three-level and dose-response meta-analysis, subgroup analysis, meta-regression, and GRADE-based evidence appraisal for systematic reviews. The engine uses inverse-variance random-effects pooling with DerSimonian-Laird, REML, Paule-Mandel, empirical Bayes, Hunter-Schmidt, Sidik-Jonkman, and Hedges estimators, validated against R metafor benchmarks. Across 108 validation checks against R version 4.5.2, the tool achieved a 96.4 percent concordance rate, with OR and SMD pooling matching within 95% CI precision. An additional 101 Selenium end-to-end tests confirm interface stability across data import, model execution, visualization rendering, and export workflows under code-freeze conditions. The tool provides an accessible, reproducible platform for evidence synthesis that matches established R package outputs within documented tolerances. Scope is limited to aggregate-level pairwise comparisons; network, diagnostic, and individual participant data meta-analyses require separate specialized tools.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+How can clinicians perform rigorous pairwise meta-analysis entirely within a web browser without writing code? TruthCert-PairwisePro is a 27,901-line single-file HTML application implementing seven heterogeneity estimators, six publication bias tests, three-level and dose-response meta-analysis. It also has subgroup analysis, meta-regression, and GRADE-based evidence appraisal for systematic reviews, the engine uses inverse-variance random-effects pooling with DerSimonian-Laird, REML, Paule-Mandel, empirical Bayes, Hunter-Schmidt, Sidik-Jonkman, and Hedges estimators. This was validated against R metafor benchmarks, across 108 validation checks against R the tool achieved a 96.4 percent concordance rate. The OR and SMD pooling matched within 95% CI precision. 101 Selenium end-to-end tests confirm interface stability across data import, model execution, visualization rendering, and export workflows, the tool matches established R package outputs. It is limited to aggregate-level pairwise comparisons; network, diagnostic, and individual participant data meta-analyses still require separate specialized tools.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/Truthcert1_work
+  Protocol:  https://github.com/mahmood726-cyber/Truthcert1_work/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/truthcert1_work/
+
+References (topic pack: individual participant data (IPD) meta-analysis):
+  1. Riley RD, Lambert PC, Abo-Zaid G. 2010. Meta-analysis of individual participant data: rationale, conduct, and reporting. BMJ. 340:c221. doi:10.1136/bmj.c221
+  2. Burke DL, Ensor J, Riley RD. 2017. Meta-analysis using individual participant data: one-stage and two-stage approaches, and why they may differ. Stat Med. 36(5):855-875. doi:10.1002/sim.7141
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[163/485] ubcma
+TITLE: UBCMA: Unified Bias-Calibrated Meta-Analysis via Joint Heterogeneity-Selection Modeling
+TYPE: methods  |  ESTIMAND: Mean absolute error reduction
+DATA: Simulated and empirical meta-analysis datasets
+PATH: C:\ubcma
+
+CURRENT BODY (156 words):
+Can a unified model jointly correct for heterogeneity, publication selection, and study quality bias within a single meta-analytic framework? We built a mixture normal likelihood with a logistic selection function and quality bias-shift covariates, evaluated against five comparator methods on simulated and empirical datasets. Estimation used multi-start L-BFGS-B with Latin hypercube sampling, profile likelihood confidence intervals, and BCa bootstrap, with optional Bayesian inference via PyMC. The unified model reduced mean difference in absolute error by 38% (95% CI 31-45%) over DerSimonian-Laird and by 21% over trim-and-fill while maintaining nominal coverage across scenarios. AIC, BIC, leave-one-out influence, and Cook distance confirmed stability, and profile likelihood intervals showed appropriate width calibration across all tested scenarios. Joint modeling of heterogeneity and selection bias yields substantially less biased pooled estimates than sequential application of separate correction methods. However, the model is limited by its parametric selection function, which may not capture all plausible publication bias mechanisms in complex review contexts.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Is a unified model jointly correct for heterogeneity, publication selection, and study quality bias within a single meta-analytic framework? We built a mixture normal likelihood (with logistic selection function and quality bias-shift covariates) evaluated against five comparator methods on simulated and empirical datasets. Estimation used multi-start L-BFGS-B with Latin hypercube sampling and profile likelihood confidence intervals with BCa bootstrap (with optional Bayesian inference via PyMC). The unified model reduced mean difference in absolute error by 38% (95% CI 31-45%) over DerSimonian-Laird, it used error by 21% over trim-and-fill while maintaining nominal coverage across scenarios. AIC, BIC, leave-one-out influence, and Cook distance confirmed stability, and profile likelihood intervals showed appropriate width calibration across all tested scenarios. Joint modeling of heterogeneity and selection bias yields substantially less biased pooled estimates (than sequential application of separate correction methods). The model is limited by its parametric selection function, which may not capture all plausible publication bias mechanisms.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/ubcma
+  Protocol:  https://github.com/mahmood726-cyber/ubcma/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/ubcma/
+
+References (topic pack: publication bias / selection):
+  1. Egger M, Davey Smith G, Schneider M, Minder C. 1997. Bias in meta-analysis detected by a simple, graphical test. BMJ. 315(7109):629-634. doi:10.1136/bmj.315.7109.629
+  2. Duval S, Tweedie R. 2000. Trim and fill: a simple funnel-plot-based method of testing and adjusting for publication bias in meta-analysis. Biometrics. 56(2):455-463. doi:10.1111/j.0006-341X.2000.00455.x
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[164/485] UmbrellaReview
+TITLE: Umbrella Review Evidence Classifier with Credibility Grading
+TYPE: methods  |  ESTIMAND: Evidence conviction class
+DATA: Summary-level data from multiple meta-analyses
+PATH: C:\Models\UmbrellaReview
+
+CURRENT BODY (156 words):
+How can researchers conducting umbrella reviews classify evidence strength across multiple meta-analyses using standardized credibility criteria? We implemented the Fusar-Poli and Radua classification system in a browser application that ingests summary data from multiple included meta-analyses and computes conviction levels automatically. The tool performs random-effects pooling, Egger regression for small-study effects, prediction interval computation, and excess significance testing, then maps results to five evidence classes from convincing to non-significant. Across a dataset of 12 meta-analyses encompassing 847 participants, the convincing evidence proportion was 0.17 (95% CI 0.04 to 0.35), while 4 associations were downgraded to weak. Excluding the smallest meta-analysis shifted one association from suggestive to weak, demonstrating the influence of individual reviews on umbrella-level verdicts. The application provides reproducible evidence grading for umbrella reviews following established methodological frameworks widely used in psychiatric and general epidemiology. One limitation is that the tool implements only one classification system and does not incorporate GRADE or AMSTAR-2 quality assessments.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Can researchers conducting umbrella reviews classify evidence strength across multiple meta-analyses using standardized credibility criteria? We implemented the Fusar-Poli and Radua classification system in a browser app, this ingests summary data from multiple included meta-analyses and computes conviction levels automatically. The tool performs random-effects pooling, Egger regression for small-study effects, prediction interval computation, and excess significance testing, this then maps results to five evidence classes from convincing to non-significant. Across a dataset of 12 meta-analyses encompassing 847 participants, the convincing evidence proportion was 0.17 (95% CI 0.04 to 0.35). 4 associations were downgraded to weak; excluding the smallest meta-analysis shifted one association from suggestive to weak, this demonstrates the influence of individual reviews on umbrella-level verdicts. The application provides reproducible evidence grading for umbrella reviews (using established methodological frameworks widely used in psychiatric and general epidemiology). The tool implements only one classification system and does not use GRADE or AMSTAR-2 quality assessments.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/UmbrellaReview
+  Protocol:  https://github.com/mahmood726-cyber/UmbrellaReview/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/umbrellareview/
+
+References (topic pack: GRADE / certainty rating):
+  1. Guyatt GH, Oxman AD, Vist GE, et al. 2008. GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. BMJ. 336(7650):924-926. doi:10.1136/bmj.39489.470347.AD
+  2. Schünemann HJ, Cuello C, Akl EA, et al. 2019. GRADE guidelines: 18. How ROBINS-I and other tools to assess risk of bias in nonrandomized studies should be used to rate the certainty of a body of evidence. J Clin Epidemiol. 111:105-114. doi:10.1016/j.jclinepi.2018.01.012
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[165/485] Value_Based_HTA_Engine
+TITLE: Multi-Criteria Evidence Synthesizer for Automated Benefit-Harm Trade-Off in Health Technology Assessment
+TYPE: methods  |  ESTIMAND: Net clinical benefit
+DATA: Pairwise70 Cochrane dataset (501 reviews, 17,000+ outcomes)
+PATH: C:\Models\Value_Based_HTA_Engine
+
+CURRENT BODY (156 words):
+Can automated benefit-harm linkage within systematic reviews produce a reproducible net clinical benefit score for value-based health technology assessment? The Multi-Criteria Evidence Synthesizer processes 501 Pairwise70 Cochrane reviews, semantically classifying over 17,000 outcomes as benefit or harm and pairing primary endpoints within each review to compute net clinical benefit. The engine selects the strongest-signal benefit and harm outcomes per review, standardizes effect estimates, and derives a trade-off score integrated with evidence integrity classifications from the companion suite. Among reviews with paired benefit-harm data, net clinical benefit was positive in 62 percent of linkages, while 38 percent showed harms outweighing benefits or inconclusive trade-offs. Joint fragility analysis revealed that 19 percent of positive net benefit conclusions reversed upon single-study exclusion, indicating value-fragile technologies. The dashboard visualizes high-value, low-value, and uncertain categories mapped to GRADE certainty for transparent HTA decision triage. However, a limitation is that the simplified one-to-one weighting ignores differential clinical importance across diverse outcome types.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Will automated benefit-harm linkage within systematic reviews produce a reproducible net clinical benefit score for value-based health technology assessment? The Multi-Criteria Evidence Synthesizer uses 501 Pairwise70 Cochrane reviews, it semantically classifies over 17,000 outcomes as benefit or harm . It pairs primary endpoints within each review to compute net clinical benefit, the engine selects the strongest-signal benefit and harm outcomes per review and standardizes effect estimates. It derives a trade-off score integrated with evidence integrity classifications from the companion suite. Using reviews with paired benefit-harm data, net clinical benefit was positive in 62 percent of linkages; 38 percent showed harms outweighing benefits or inconclusive trade-offs. Joint fragility analysis revealed that 19 percent of positive net benefit conclusions reversed upon single-study exclusion, this indicates value-fragile technologies, the dashboard visualizes high-value, low-value, and uncertain categories using GRADE certainty for transparent HTA decision triage. A limitation is that simplified one-to-one weighting ignores differential clinical importance across diverse outcome types.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/Value_Based_HTA_Engine
+  Protocol:  https://github.com/mahmood726-cyber/Value_Based_HTA_Engine/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/value_based_hta_engine/
+
+References (topic pack: fragility index):
+  1. Walsh M, Srinathan SK, McAuley DF, et al. 2014. The statistical significance of randomized controlled trial results is frequently fragile: a case for a Fragility Index. J Clin Epidemiol. 67(6):622-628. doi:10.1016/j.jclinepi.2013.10.019
+  2. Atal I, Porcher R, Boutron I, Ravaud P. 2019. The statistical significance of meta-analyses is frequently fragile: definition of a fragility index for meta-analyses. J Clin Epidemiol. 111:32-40. doi:10.1016/j.jclinepi.2019.03.012
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[166/485] VOICalculator
+TITLE: Value of Information Calculator for Meta-Analysis Decision Support
+TYPE: methods  |  ESTIMAND: EVPI and EVSI (dollars)
+DATA: Pooled meta-analysis summary statistics with decision parameters
+PATH: C:\Models\VOICalculator
+
+CURRENT BODY (156 words):
+When is conducting another trial justified given existing meta-analytic evidence, and how large should it be to maximize research returns? We built a browser-based calculator estimating expected value of perfect information and expected value of sample information from pooled meta-analysis results. The tool integrates posterior distributions with decision thresholds, net benefit parameters, and population sizes to compute EVPI, then generates EVSI curves across allocation. For a meta-analysis of 6 trials with pooled OR 0.32 (95% CI 0.18 to 0.51) and between-study variance 0.04, EVPI was 2.8 million dollars at a willingness-to-pay threshold of 50,000 dollars per benefit unit. The optimal trial size was 340 participants, beyond which marginal EVSI fell below incremental costs of 4,200 dollars per patient enrolled. The calculator makes health-economic value of information analysis accessible without specialized software, supporting rational research prioritization in evidence-based medicine. One limitation is that the model assumes normal posteriors and cannot accommodate non-parametric or heavily skewed effect distributions.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Is conducting another trial justified given existing meta-analytic evidence, and how large should it be to maximize research returns? We built a browser-based calculator for estimating expected value of perfect information as well as expected value of sample information from pooled meta-analysis results. The tool integrates posterior distributions with decision thresholds, net benefit parameters, and population sizes to compute EVPI, it then generates EVSI curves across allocation. For a meta-analysis of 6 trials with pooled OR 0.32 (95% CI 0.18 to 0.51) and between-study variance 0.04 our EVPI was 2.8 million dollars (at a willingness-to-pay threshold of 50,000 dollars per benefit unit). The optimal trial size was 340 participants; beyond this marginal EVSI fell below incremental costs of 4,200 dollars per patient enrolled. The calculator makes health-economic value of information analysis accessible for supporting rational research prioritization. One limitation is that the model assumes normal posteriors and cannot accommodate non-parametric or massively skewed effect distributions.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/VOICalculator
+  Protocol:  https://github.com/mahmood726-cyber/VOICalculator/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/voicalculator/
+
+References (topic pack: browser-based meta-analysis tooling):
+  1. Schwarzer G, Carpenter JR, Rücker G. 2015. Meta-Analysis with R. Springer. doi:10.1007/978-3-319-21416-0
+  2. Viechtbauer W. 2010. Conducting meta-analyses in R with the metafor package. J Stat Softw. 36(3):1-48. doi:10.18637/jss.v036.i03
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[167/485] wasserstein
+TITLE: Automated Kaplan-Meier Digitization for Hazard Ratio Extraction — E156 ◆ Synthēsis</title>
+<meta name="description" content="E156 micro-paper: TruthCert-PairwisePro: A Browser-Based Pairwise Meta-Analysis Engine with Seven Heterogeneity Estimators
+TYPE: methods  |  ESTIMAND: Pooled effect size (OR/RR/MD/SMD)
+DATA: 27,901-line single-file HTML with 7 heterogeneity estimators
+PATH: C:\HTML apps\Truthcert1_work
+
+CURRENT BODY (156 words):
+How can clinicians perform rigorous pairwise meta-analysis entirely within a web browser, without installing any statistical software or writing code? TruthCert-PairwisePro is a 27,901-line single-file HTML application implementing seven heterogeneity estimators, six publication bias tests, three-level and dose-response meta-analysis, subgroup analysis, meta-regression, and GRADE-based evidence appraisal for systematic reviews. The engine uses inverse-variance random-effects pooling with DerSimonian-Laird, REML, Paule-Mandel, empirical Bayes, Hunter-Schmidt, Sidik-Jonkman, and Hedges estimators, validated against R metafor benchmarks. Across 108 validation checks against R version 4.5.2, the tool achieved a 96.4 percent concordance rate, with OR and SMD pooling matching within 95% CI precision. An additional 101 Selenium end-to-end tests confirm interface stability across data import, model execution, visualization rendering, and export workflows under code-freeze conditions. The tool provides an accessible, reproducible platform for evidence synthesis that matches established R package outputs within documented tolerances. Scope is limited to aggregate-level pairwise comparisons; network, diagnostic, and individual participant data meta-analyses require separate specialized tools.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+How can clinicians perform rigorous pairwise meta-analysis entirely within a web browser without writing code? TruthCert-PairwisePro is a 27,901-line single-file HTML application implementing seven heterogeneity estimators, six publication bias tests, three-level and dose-response meta-analysis. It also has subgroup analysis, meta-regression, and GRADE-based evidence appraisal for systematic reviews, the engine uses inverse-variance random-effects pooling with DerSimonian-Laird, REML, Paule-Mandel, empirical Bayes, Hunter-Schmidt, Sidik-Jonkman, and Hedges estimators. This was validated against R metafor benchmarks, across 108 validation checks against R the tool achieved a 96.4 percent concordance rate. The OR and SMD pooling matched within 95% CI precision. 101 Selenium end-to-end tests confirm interface stability across data import, model execution, visualization rendering, and export workflows, the tool matches established R package outputs. It is limited to aggregate-level pairwise comparisons; network, diagnostic, and individual participant data meta-analyses still require separate specialized tools.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/Truthcert1_work
+  Protocol:  https://github.com/mahmood726-cyber/Truthcert1_work/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/truthcert1_work/
+
+References (topic pack: individual participant data (IPD) meta-analysis):
+  1. Riley RD, Lambert PC, Abo-Zaid G. 2010. Meta-analysis of individual participant data: rationale, conduct, and reporting. BMJ. 340:c221. doi:10.1136/bmj.c221
+  2. Burke DL, Ensor J, Riley RD. 2017. Meta-analysis using individual participant data: one-stage and two-stage approaches, and why they may differ. Stat Med. 36(5):855-875. doi:10.1002/sim.7141
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[163/485] ubcma
+TITLE: UBCMA: Unified Bias-Calibrated Meta-Analysis via Joint Heterogeneity-Selection Modeling
+TYPE: methods  |  ESTIMAND: Mean absolute error reduction
+DATA: Simulated and empirical meta-analysis datasets
+PATH: C:\ubcma
+
+CURRENT BODY (156 words):
+Can a unified model jointly correct for heterogeneity, publication selection, and study quality bias within a single meta-analytic framework? We built a mixture normal likelihood with a logistic selection function and quality bias-shift covariates, evaluated against five comparator methods on simulated and empirical datasets. Estimation used multi-start L-BFGS-B with Latin hypercube sampling, profile likelihood confidence intervals, and BCa bootstrap, with optional Bayesian inference via PyMC. The unified model reduced mean difference in absolute error by 38% (95% CI 31-45%) over DerSimonian-Laird and by 21% over trim-and-fill while maintaining nominal coverage across scenarios. AIC, BIC, leave-one-out influence, and Cook distance confirmed stability, and profile likelihood intervals showed appropriate width calibration across all tested scenarios. Joint modeling of heterogeneity and selection bias yields substantially less biased pooled estimates than sequential application of separate correction methods. However, the model is limited by its parametric selection function, which may not capture all plausible publication bias mechanisms in complex review contexts.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Is a unified model jointly correct for heterogeneity, publication selection, and study quality bias within a single meta-analytic framework? We built a mixture normal likelihood (with logistic selection function and quality bias-shift covariates) evaluated against five comparator methods on simulated and empirical datasets. Estimation used multi-start L-BFGS-B with Latin hypercube sampling and profile likelihood confidence intervals with BCa bootstrap (with optional Bayesian inference via PyMC). The unified model reduced mean difference in absolute error by 38% (95% CI 31-45%) over DerSimonian-Laird, it used error by 21% over trim-and-fill while maintaining nominal coverage across scenarios. AIC, BIC, leave-one-out influence, and Cook distance confirmed stability, and profile likelihood intervals showed appropriate width calibration across all tested scenarios. Joint modeling of heterogeneity and selection bias yields substantially less biased pooled estimates (than sequential application of separate correction methods). The model is limited by its parametric selection function, which may not capture all plausible publication bias mechanisms.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/ubcma
+  Protocol:  https://github.com/mahmood726-cyber/ubcma/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/ubcma/
+
+References (topic pack: publication bias / selection):
+  1. Egger M, Davey Smith G, Schneider M, Minder C. 1997. Bias in meta-analysis detected by a simple, graphical test. BMJ. 315(7109):629-634. doi:10.1136/bmj.315.7109.629
+  2. Duval S, Tweedie R. 2000. Trim and fill: a simple funnel-plot-based method of testing and adjusting for publication bias in meta-analysis. Biometrics. 56(2):455-463. doi:10.1111/j.0006-341X.2000.00455.x
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[164/485] UmbrellaReview
+TITLE: Umbrella Review Evidence Classifier with Credibility Grading
+TYPE: methods  |  ESTIMAND: Evidence conviction class
+DATA: Summary-level data from multiple meta-analyses
+PATH: C:\Models\UmbrellaReview
+
+CURRENT BODY (156 words):
+How can researchers conducting umbrella reviews classify evidence strength across multiple meta-analyses using standardized credibility criteria? We implemented the Fusar-Poli and Radua classification system in a browser application that ingests summary data from multiple included meta-analyses and computes conviction levels automatically. The tool performs random-effects pooling, Egger regression for small-study effects, prediction interval computation, and excess significance testing, then maps results to five evidence classes from convincing to non-significant. Across a dataset of 12 meta-analyses encompassing 847 participants, the convincing evidence proportion was 0.17 (95% CI 0.04 to 0.35), while 4 associations were downgraded to weak. Excluding the smallest meta-analysis shifted one association from suggestive to weak, demonstrating the influence of individual reviews on umbrella-level verdicts. The application provides reproducible evidence grading for umbrella reviews following established methodological frameworks widely used in psychiatric and general epidemiology. One limitation is that the tool implements only one classification system and does not incorporate GRADE or AMSTAR-2 quality assessments.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Can researchers conducting umbrella reviews classify evidence strength across multiple meta-analyses using standardized credibility criteria? We implemented the Fusar-Poli and Radua classification system in a browser app, this ingests summary data from multiple included meta-analyses and computes conviction levels automatically. The tool performs random-effects pooling, Egger regression for small-study effects, prediction interval computation, and excess significance testing, this then maps results to five evidence classes from convincing to non-significant. Across a dataset of 12 meta-analyses encompassing 847 participants, the convincing evidence proportion was 0.17 (95% CI 0.04 to 0.35). 4 associations were downgraded to weak; excluding the smallest meta-analysis shifted one association from suggestive to weak, this demonstrates the influence of individual reviews on umbrella-level verdicts. The application provides reproducible evidence grading for umbrella reviews (using established methodological frameworks widely used in psychiatric and general epidemiology). The tool implements only one classification system and does not use GRADE or AMSTAR-2 quality assessments.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/UmbrellaReview
+  Protocol:  https://github.com/mahmood726-cyber/UmbrellaReview/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/umbrellareview/
+
+References (topic pack: GRADE / certainty rating):
+  1. Guyatt GH, Oxman AD, Vist GE, et al. 2008. GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. BMJ. 336(7650):924-926. doi:10.1136/bmj.39489.470347.AD
+  2. Schünemann HJ, Cuello C, Akl EA, et al. 2019. GRADE guidelines: 18. How ROBINS-I and other tools to assess risk of bias in nonrandomized studies should be used to rate the certainty of a body of evidence. J Clin Epidemiol. 111:105-114. doi:10.1016/j.jclinepi.2018.01.012
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[165/485] Value_Based_HTA_Engine
+TITLE: Multi-Criteria Evidence Synthesizer for Automated Benefit-Harm Trade-Off in Health Technology Assessment
+TYPE: methods  |  ESTIMAND: Net clinical benefit
+DATA: Pairwise70 Cochrane dataset (501 reviews, 17,000+ outcomes)
+PATH: C:\Models\Value_Based_HTA_Engine
+
+CURRENT BODY (156 words):
+Can automated benefit-harm linkage within systematic reviews produce a reproducible net clinical benefit score for value-based health technology assessment? The Multi-Criteria Evidence Synthesizer processes 501 Pairwise70 Cochrane reviews, semantically classifying over 17,000 outcomes as benefit or harm and pairing primary endpoints within each review to compute net clinical benefit. The engine selects the strongest-signal benefit and harm outcomes per review, standardizes effect estimates, and derives a trade-off score integrated with evidence integrity classifications from the companion suite. Among reviews with paired benefit-harm data, net clinical benefit was positive in 62 percent of linkages, while 38 percent showed harms outweighing benefits or inconclusive trade-offs. Joint fragility analysis revealed that 19 percent of positive net benefit conclusions reversed upon single-study exclusion, indicating value-fragile technologies. The dashboard visualizes high-value, low-value, and uncertain categories mapped to GRADE certainty for transparent HTA decision triage. However, a limitation is that the simplified one-to-one weighting ignores differential clinical importance across diverse outcome types.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Will automated benefit-harm linkage within systematic reviews produce a reproducible net clinical benefit score for value-based health technology assessment? The Multi-Criteria Evidence Synthesizer uses 501 Pairwise70 Cochrane reviews, it semantically classifies over 17,000 outcomes as benefit or harm . It pairs primary endpoints within each review to compute net clinical benefit, the engine selects the strongest-signal benefit and harm outcomes per review and standardizes effect estimates. It derives a trade-off score integrated with evidence integrity classifications from the companion suite. Using reviews with paired benefit-harm data, net clinical benefit was positive in 62 percent of linkages; 38 percent showed harms outweighing benefits or inconclusive trade-offs. Joint fragility analysis revealed that 19 percent of positive net benefit conclusions reversed upon single-study exclusion, this indicates value-fragile technologies, the dashboard visualizes high-value, low-value, and uncertain categories using GRADE certainty for transparent HTA decision triage. A limitation is that simplified one-to-one weighting ignores differential clinical importance across diverse outcome types.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/Value_Based_HTA_Engine
+  Protocol:  https://github.com/mahmood726-cyber/Value_Based_HTA_Engine/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/value_based_hta_engine/
+
+References (topic pack: fragility index):
+  1. Walsh M, Srinathan SK, McAuley DF, et al. 2014. The statistical significance of randomized controlled trial results is frequently fragile: a case for a Fragility Index. J Clin Epidemiol. 67(6):622-628. doi:10.1016/j.jclinepi.2013.10.019
+  2. Atal I, Porcher R, Boutron I, Ravaud P. 2019. The statistical significance of meta-analyses is frequently fragile: definition of a fragility index for meta-analyses. J Clin Epidemiol. 111:32-40. doi:10.1016/j.jclinepi.2019.03.012
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[166/485] VOICalculator
+TITLE: Value of Information Calculator for Meta-Analysis Decision Support
+TYPE: methods  |  ESTIMAND: EVPI and EVSI (dollars)
+DATA: Pooled meta-analysis summary statistics with decision parameters
+PATH: C:\Models\VOICalculator
+
+CURRENT BODY (156 words):
+When is conducting another trial justified given existing meta-analytic evidence, and how large should it be to maximize research returns? We built a browser-based calculator estimating expected value of perfect information and expected value of sample information from pooled meta-analysis results. The tool integrates posterior distributions with decision thresholds, net benefit parameters, and population sizes to compute EVPI, then generates EVSI curves across allocation. For a meta-analysis of 6 trials with pooled OR 0.32 (95% CI 0.18 to 0.51) and between-study variance 0.04, EVPI was 2.8 million dollars at a willingness-to-pay threshold of 50,000 dollars per benefit unit. The optimal trial size was 340 participants, beyond which marginal EVSI fell below incremental costs of 4,200 dollars per patient enrolled. The calculator makes health-economic value of information analysis accessible without specialized software, supporting rational research prioritization in evidence-based medicine. One limitation is that the model assumes normal posteriors and cannot accommodate non-parametric or heavily skewed effect distributions.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Is conducting another trial justified given existing meta-analytic evidence, and how large should it be to maximize research returns? We built a browser-based calculator for estimating expected value of perfect information as well as expected value of sample information from pooled meta-analysis results. The tool integrates posterior distributions with decision thresholds, net benefit parameters, and population sizes to compute EVPI, it then generates EVSI curves across allocation. For a meta-analysis of 6 trials with pooled OR 0.32 (95% CI 0.18 to 0.51) and between-study variance 0.04 our EVPI was 2.8 million dollars (at a willingness-to-pay threshold of 50,000 dollars per benefit unit). The optimal trial size was 340 participants; beyond this marginal EVSI fell below incremental costs of 4,200 dollars per patient enrolled. The calculator makes health-economic value of information analysis accessible for supporting rational research prioritization. One limitation is that the model assumes normal posteriors and cannot accommodate non-parametric or massively skewed effect distributions.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/VOICalculator
+  Protocol:  https://github.com/mahmood726-cyber/VOICalculator/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/voicalculator/
+
+References (topic pack: browser-based meta-analysis tooling):
+  1. Schwarzer G, Carpenter JR, Rücker G. 2015. Meta-Analysis with R. Springer. doi:10.1007/978-3-319-21416-0
+  2. Viechtbauer W. 2010. Conducting meta-analyses in R with the metafor package. J Stat Softw. 36(3):1-48. doi:10.18637/jss.v036.i03
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[167/485] wasserstein
+TITLE: Automated Kaplan-Meier Digitization for Hazard Ratio Extraction (HR, methods). 7 sentences, 156 words. Targeting Synthēsis.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { padding: 2rem 1rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #1a1a1a; background: #eef2ff; }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .mark { color: #4338ca; font-weight: 600; letter-spacing: 0.02em; font-size: 0.9rem; }
+  h1 { font-size: 1.55rem; line-height: 1.25; margin: 0.3rem 0 0.5rem; letter-spacing: -0.01em; }
+  .sub { color: #6b7280; font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .sub code { background: #e5e7eb; padding: 1px 5px; border-radius: 3px; font-size: 0.85em; }
+  .highlight { background: linear-gradient(135deg, #4338ca22, #4338ca0a); border-left: 4px solid #4338ca; padding: 0.9rem 1.1rem; border-radius: 0 6px 6px 0; margin: 0 0 1.5rem; font-size: 1rem; color: #1f2937; }
+  .highlight strong { color: #4338ca; }
+  .body { background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid #e5e7eb; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .body p { margin: 0; }
+  .readme { background: #fafafa; padding: 1rem 1.2rem; border-radius: 6px; border: 1px dashed #d1d5db; margin-bottom: 1.5rem; font-size: 0.88rem; color: #4b5563; font-style: italic; }
+  .readme::before { content: "FROM THE README — "; font-weight: 600; font-style: normal; color: #9ca3af; font-size: 0.75rem; letter-spacing: 0.05em; }
+  .stats { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .chip { background: white; border: 1px solid #e5e7eb; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; color: #4b5563; }
+  .chip strong { color: #1a1a1a; }
+  .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.5rem; margin-bottom: 1rem; }
+  .links a { display: block; padding: 0.7rem 1rem; background: white; border: 1px solid #e5e7eb; border-radius: 6px; color: #3730a3; text-decoration: none; font-size: 0.88rem; text-align: center; }
+  .links a:hover { background: #f3f4f6; border-color: #4338ca88; }
+  .files { background: #f9fafb; padding: 0.8rem 1rem; border-radius: 6px; border: 1px solid #e5e7eb; margin-bottom: 1.5rem; font-size: 0.83rem; color: #6b7280; }
+  .files code { background: white; border: 1px solid #e5e7eb; padding: 1px 6px; border-radius: 3px; margin: 0 2px; display: inline-block; color: #1f2937; }
+  .meta { font-size: 0.82rem; color: #4b5563; background: white; padding: 1rem 1.2rem; border-radius: 6px; border: 1px solid #e5e7eb; }
+  .meta dt { font-weight: 600; margin-top: 0.4rem; color: #111827; }
+  .meta dt:first-child { margin-top: 0; }
+  footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; color: #9ca3af; font-size: 0.8rem; text-align: center; }
+  footer a { color: #6b7280; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<p class="mark">◆ Synthēsis · Methods Note</p>
+<h1>TruthCert-PairwisePro: A Browser-Based Pairwise Meta-Analysis Engine with Seven Heterogeneity Estimators
+TYPE: methods  |  ESTIMAND: Pooled effect size (OR/RR/MD/SMD)
+DATA: 27,901-line single-file HTML with 7 heterogeneity estimators
+PATH: C:\HTML apps\Truthcert1_work
+
+CURRENT BODY (156 words):
+How can clinicians perform rigorous pairwise meta-analysis entirely within a web browser, without installing any statistical software or writing code? TruthCert-PairwisePro is a 27,901-line single-file HTML application implementing seven heterogeneity estimators, six publication bias tests, three-level and dose-response meta-analysis, subgroup analysis, meta-regression, and GRADE-based evidence appraisal for systematic reviews. The engine uses inverse-variance random-effects pooling with DerSimonian-Laird, REML, Paule-Mandel, empirical Bayes, Hunter-Schmidt, Sidik-Jonkman, and Hedges estimators, validated against R metafor benchmarks. Across 108 validation checks against R version 4.5.2, the tool achieved a 96.4 percent concordance rate, with OR and SMD pooling matching within 95% CI precision. An additional 101 Selenium end-to-end tests confirm interface stability across data import, model execution, visualization rendering, and export workflows under code-freeze conditions. The tool provides an accessible, reproducible platform for evidence synthesis that matches established R package outputs within documented tolerances. Scope is limited to aggregate-level pairwise comparisons; network, diagnostic, and individual participant data meta-analyses require separate specialized tools.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+How can clinicians perform rigorous pairwise meta-analysis entirely within a web browser without writing code? TruthCert-PairwisePro is a 27,901-line single-file HTML application implementing seven heterogeneity estimators, six publication bias tests, three-level and dose-response meta-analysis. It also has subgroup analysis, meta-regression, and GRADE-based evidence appraisal for systematic reviews, the engine uses inverse-variance random-effects pooling with DerSimonian-Laird, REML, Paule-Mandel, empirical Bayes, Hunter-Schmidt, Sidik-Jonkman, and Hedges estimators. This was validated against R metafor benchmarks, across 108 validation checks against R the tool achieved a 96.4 percent concordance rate. The OR and SMD pooling matched within 95% CI precision. 101 Selenium end-to-end tests confirm interface stability across data import, model execution, visualization rendering, and export workflows, the tool matches established R package outputs. It is limited to aggregate-level pairwise comparisons; network, diagnostic, and individual participant data meta-analyses still require separate specialized tools.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/Truthcert1_work
+  Protocol:  https://github.com/mahmood726-cyber/Truthcert1_work/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/truthcert1_work/
+
+References (topic pack: individual participant data (IPD) meta-analysis):
+  1. Riley RD, Lambert PC, Abo-Zaid G. 2010. Meta-analysis of individual participant data: rationale, conduct, and reporting. BMJ. 340:c221. doi:10.1136/bmj.c221
+  2. Burke DL, Ensor J, Riley RD. 2017. Meta-analysis using individual participant data: one-stage and two-stage approaches, and why they may differ. Stat Med. 36(5):855-875. doi:10.1002/sim.7141
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[163/485] ubcma
+TITLE: UBCMA: Unified Bias-Calibrated Meta-Analysis via Joint Heterogeneity-Selection Modeling
+TYPE: methods  |  ESTIMAND: Mean absolute error reduction
+DATA: Simulated and empirical meta-analysis datasets
+PATH: C:\ubcma
+
+CURRENT BODY (156 words):
+Can a unified model jointly correct for heterogeneity, publication selection, and study quality bias within a single meta-analytic framework? We built a mixture normal likelihood with a logistic selection function and quality bias-shift covariates, evaluated against five comparator methods on simulated and empirical datasets. Estimation used multi-start L-BFGS-B with Latin hypercube sampling, profile likelihood confidence intervals, and BCa bootstrap, with optional Bayesian inference via PyMC. The unified model reduced mean difference in absolute error by 38% (95% CI 31-45%) over DerSimonian-Laird and by 21% over trim-and-fill while maintaining nominal coverage across scenarios. AIC, BIC, leave-one-out influence, and Cook distance confirmed stability, and profile likelihood intervals showed appropriate width calibration across all tested scenarios. Joint modeling of heterogeneity and selection bias yields substantially less biased pooled estimates than sequential application of separate correction methods. However, the model is limited by its parametric selection function, which may not capture all plausible publication bias mechanisms in complex review contexts.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Is a unified model jointly correct for heterogeneity, publication selection, and study quality bias within a single meta-analytic framework? We built a mixture normal likelihood (with logistic selection function and quality bias-shift covariates) evaluated against five comparator methods on simulated and empirical datasets. Estimation used multi-start L-BFGS-B with Latin hypercube sampling and profile likelihood confidence intervals with BCa bootstrap (with optional Bayesian inference via PyMC). The unified model reduced mean difference in absolute error by 38% (95% CI 31-45%) over DerSimonian-Laird, it used error by 21% over trim-and-fill while maintaining nominal coverage across scenarios. AIC, BIC, leave-one-out influence, and Cook distance confirmed stability, and profile likelihood intervals showed appropriate width calibration across all tested scenarios. Joint modeling of heterogeneity and selection bias yields substantially less biased pooled estimates (than sequential application of separate correction methods). The model is limited by its parametric selection function, which may not capture all plausible publication bias mechanisms.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/ubcma
+  Protocol:  https://github.com/mahmood726-cyber/ubcma/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/ubcma/
+
+References (topic pack: publication bias / selection):
+  1. Egger M, Davey Smith G, Schneider M, Minder C. 1997. Bias in meta-analysis detected by a simple, graphical test. BMJ. 315(7109):629-634. doi:10.1136/bmj.315.7109.629
+  2. Duval S, Tweedie R. 2000. Trim and fill: a simple funnel-plot-based method of testing and adjusting for publication bias in meta-analysis. Biometrics. 56(2):455-463. doi:10.1111/j.0006-341X.2000.00455.x
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[164/485] UmbrellaReview
+TITLE: Umbrella Review Evidence Classifier with Credibility Grading
+TYPE: methods  |  ESTIMAND: Evidence conviction class
+DATA: Summary-level data from multiple meta-analyses
+PATH: C:\Models\UmbrellaReview
+
+CURRENT BODY (156 words):
+How can researchers conducting umbrella reviews classify evidence strength across multiple meta-analyses using standardized credibility criteria? We implemented the Fusar-Poli and Radua classification system in a browser application that ingests summary data from multiple included meta-analyses and computes conviction levels automatically. The tool performs random-effects pooling, Egger regression for small-study effects, prediction interval computation, and excess significance testing, then maps results to five evidence classes from convincing to non-significant. Across a dataset of 12 meta-analyses encompassing 847 participants, the convincing evidence proportion was 0.17 (95% CI 0.04 to 0.35), while 4 associations were downgraded to weak. Excluding the smallest meta-analysis shifted one association from suggestive to weak, demonstrating the influence of individual reviews on umbrella-level verdicts. The application provides reproducible evidence grading for umbrella reviews following established methodological frameworks widely used in psychiatric and general epidemiology. One limitation is that the tool implements only one classification system and does not incorporate GRADE or AMSTAR-2 quality assessments.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Can researchers conducting umbrella reviews classify evidence strength across multiple meta-analyses using standardized credibility criteria? We implemented the Fusar-Poli and Radua classification system in a browser app, this ingests summary data from multiple included meta-analyses and computes conviction levels automatically. The tool performs random-effects pooling, Egger regression for small-study effects, prediction interval computation, and excess significance testing, this then maps results to five evidence classes from convincing to non-significant. Across a dataset of 12 meta-analyses encompassing 847 participants, the convincing evidence proportion was 0.17 (95% CI 0.04 to 0.35). 4 associations were downgraded to weak; excluding the smallest meta-analysis shifted one association from suggestive to weak, this demonstrates the influence of individual reviews on umbrella-level verdicts. The application provides reproducible evidence grading for umbrella reviews (using established methodological frameworks widely used in psychiatric and general epidemiology). The tool implements only one classification system and does not use GRADE or AMSTAR-2 quality assessments.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/UmbrellaReview
+  Protocol:  https://github.com/mahmood726-cyber/UmbrellaReview/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/umbrellareview/
+
+References (topic pack: GRADE / certainty rating):
+  1. Guyatt GH, Oxman AD, Vist GE, et al. 2008. GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. BMJ. 336(7650):924-926. doi:10.1136/bmj.39489.470347.AD
+  2. Schünemann HJ, Cuello C, Akl EA, et al. 2019. GRADE guidelines: 18. How ROBINS-I and other tools to assess risk of bias in nonrandomized studies should be used to rate the certainty of a body of evidence. J Clin Epidemiol. 111:105-114. doi:10.1016/j.jclinepi.2018.01.012
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[165/485] Value_Based_HTA_Engine
+TITLE: Multi-Criteria Evidence Synthesizer for Automated Benefit-Harm Trade-Off in Health Technology Assessment
+TYPE: methods  |  ESTIMAND: Net clinical benefit
+DATA: Pairwise70 Cochrane dataset (501 reviews, 17,000+ outcomes)
+PATH: C:\Models\Value_Based_HTA_Engine
+
+CURRENT BODY (156 words):
+Can automated benefit-harm linkage within systematic reviews produce a reproducible net clinical benefit score for value-based health technology assessment? The Multi-Criteria Evidence Synthesizer processes 501 Pairwise70 Cochrane reviews, semantically classifying over 17,000 outcomes as benefit or harm and pairing primary endpoints within each review to compute net clinical benefit. The engine selects the strongest-signal benefit and harm outcomes per review, standardizes effect estimates, and derives a trade-off score integrated with evidence integrity classifications from the companion suite. Among reviews with paired benefit-harm data, net clinical benefit was positive in 62 percent of linkages, while 38 percent showed harms outweighing benefits or inconclusive trade-offs. Joint fragility analysis revealed that 19 percent of positive net benefit conclusions reversed upon single-study exclusion, indicating value-fragile technologies. The dashboard visualizes high-value, low-value, and uncertain categories mapped to GRADE certainty for transparent HTA decision triage. However, a limitation is that the simplified one-to-one weighting ignores differential clinical importance across diverse outcome types.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Will automated benefit-harm linkage within systematic reviews produce a reproducible net clinical benefit score for value-based health technology assessment? The Multi-Criteria Evidence Synthesizer uses 501 Pairwise70 Cochrane reviews, it semantically classifies over 17,000 outcomes as benefit or harm . It pairs primary endpoints within each review to compute net clinical benefit, the engine selects the strongest-signal benefit and harm outcomes per review and standardizes effect estimates. It derives a trade-off score integrated with evidence integrity classifications from the companion suite. Using reviews with paired benefit-harm data, net clinical benefit was positive in 62 percent of linkages; 38 percent showed harms outweighing benefits or inconclusive trade-offs. Joint fragility analysis revealed that 19 percent of positive net benefit conclusions reversed upon single-study exclusion, this indicates value-fragile technologies, the dashboard visualizes high-value, low-value, and uncertain categories using GRADE certainty for transparent HTA decision triage. A limitation is that simplified one-to-one weighting ignores differential clinical importance across diverse outcome types.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/Value_Based_HTA_Engine
+  Protocol:  https://github.com/mahmood726-cyber/Value_Based_HTA_Engine/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/value_based_hta_engine/
+
+References (topic pack: fragility index):
+  1. Walsh M, Srinathan SK, McAuley DF, et al. 2014. The statistical significance of randomized controlled trial results is frequently fragile: a case for a Fragility Index. J Clin Epidemiol. 67(6):622-628. doi:10.1016/j.jclinepi.2013.10.019
+  2. Atal I, Porcher R, Boutron I, Ravaud P. 2019. The statistical significance of meta-analyses is frequently fragile: definition of a fragility index for meta-analyses. J Clin Epidemiol. 111:32-40. doi:10.1016/j.jclinepi.2019.03.012
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[166/485] VOICalculator
+TITLE: Value of Information Calculator for Meta-Analysis Decision Support
+TYPE: methods  |  ESTIMAND: EVPI and EVSI (dollars)
+DATA: Pooled meta-analysis summary statistics with decision parameters
+PATH: C:\Models\VOICalculator
+
+CURRENT BODY (156 words):
+When is conducting another trial justified given existing meta-analytic evidence, and how large should it be to maximize research returns? We built a browser-based calculator estimating expected value of perfect information and expected value of sample information from pooled meta-analysis results. The tool integrates posterior distributions with decision thresholds, net benefit parameters, and population sizes to compute EVPI, then generates EVSI curves across allocation. For a meta-analysis of 6 trials with pooled OR 0.32 (95% CI 0.18 to 0.51) and between-study variance 0.04, EVPI was 2.8 million dollars at a willingness-to-pay threshold of 50,000 dollars per benefit unit. The optimal trial size was 340 participants, beyond which marginal EVSI fell below incremental costs of 4,200 dollars per patient enrolled. The calculator makes health-economic value of information analysis accessible without specialized software, supporting rational research prioritization in evidence-based medicine. One limitation is that the model assumes normal posteriors and cannot accommodate non-parametric or heavily skewed effect distributions.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Is conducting another trial justified given existing meta-analytic evidence, and how large should it be to maximize research returns? We built a browser-based calculator for estimating expected value of perfect information as well as expected value of sample information from pooled meta-analysis results. The tool integrates posterior distributions with decision thresholds, net benefit parameters, and population sizes to compute EVPI, it then generates EVSI curves across allocation. For a meta-analysis of 6 trials with pooled OR 0.32 (95% CI 0.18 to 0.51) and between-study variance 0.04 our EVPI was 2.8 million dollars (at a willingness-to-pay threshold of 50,000 dollars per benefit unit). The optimal trial size was 340 participants; beyond this marginal EVSI fell below incremental costs of 4,200 dollars per patient enrolled. The calculator makes health-economic value of information analysis accessible for supporting rational research prioritization. One limitation is that the model assumes normal posteriors and cannot accommodate non-parametric or massively skewed effect distributions.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad &lt;mahmood.ahmad2@nhs.net&gt;
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/VOICalculator
+  Protocol:  https://github.com/mahmood726-cyber/VOICalculator/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/voicalculator/
+
+References (topic pack: browser-based meta-analysis tooling):
+  1. Schwarzer G, Carpenter JR, Rücker G. 2015. Meta-Analysis with R. Springer. doi:10.1007/978-3-319-21416-0
+  2. Viechtbauer W. 2010. Conducting meta-analyses in R with the metafor package. J Stat Softw. 36(3):1-48. doi:10.18637/jss.v036.i03
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review &amp; editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review &amp; editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[167/485] wasserstein
+TITLE: Automated Kaplan-Meier Digitization for Hazard Ratio Extraction</h1>
+<p class="sub">Project <code>Truthcert1_work</code> · <strong>methods</strong> study · primary estimand <strong>HR</strong></p>
+
+<div class="highlight"><strong>Key result:</strong> Across 40 trials, 36 produced HR estimates within the published 95% CI, yielding 90 percent concordance with median relative error of 2.</div>
+
+<div class="stats">
+  <span class="chip">📏 <strong>156 words</strong> / 7 sentences</span>
+  
+  
+  
+</div>
+
+<div class="body">
+<p>Can automated Kaplan-Meier digitization from published PDF figures produce hazard ratios accurate enough for meta-analytic pooling? We developed a seven-stage pipeline that rasterizes PDFs, classifies figures, calibrates axes via OCR, extracts curves through HSV color segmentation, separates arms with KMeans clustering, reconstructs individual patient data using the Guyot algorithm, and estimates hazard ratios via log-rank tests. The system was validated on 40 trials spanning 11 therapeutic areas including cardiac ablation, heart failure, and oncology using published hazard ratios as reference. Across 40 trials, 36 produced HR estimates within the published 95% CI, yielding 90 percent concordance with median relative error of 2.5 percent. Cross-validation against R IPDfromKM showed the Python pipeline outperforming with median errors of 1.2 versus 10.4 percent on gold-standard atrial fibrillation trials. Automated KM digitization provides usable effect estimates when individual patient data are unavailable for time-to-event meta-analyses. The limitation of color-dependent curve separation means monochrome or stylized figures may yield unreliable results.</p>
+</div>
+
+
+
+<div class="files">Repo contents: <code>TruthCert-PairwisePro-v1.0.html</code> <code>paper</code> <code>review-findings.md</code> <code>test_webr_audit.py</code></div>
+
+<div class="links">
+  <a href="https://github.com/mahmood726-cyber/Truthcert1_work">▶ Source code</a>
+  <a href="https://github.com/mahmood726-cyber/Truthcert1_work/blob/main/E156-PROTOCOL.md">📄 E156 protocol</a>
+  <a href="https://mahmood726-cyber.github.io/e156/students.html" target="_blank">🎓 Claim this paper</a>
+  <a href="https://www.synthesis-medicine.org/index.php/journal" target="_blank">📖 Synthēsis journal</a>
+</div>
+
+<div class="meta">
+<dt>Target journal</dt>
+<dd>◆ Synthēsis (synthesis-medicine.org) — section: Methods Note</dd>
+<dt>Format contract</dt>
+<dd>E156 micro-paper: exactly 7 sentences, ≤156 words, single paragraph</dd>
+<dt>License</dt>
+<dd>Manuscript: CC-BY-4.0 · Code: MIT</dd>
+<dt>Status</dt>
+<dd>Open — claim on the student board</dd>
+</div>
+
+<footer>
+  Landing page for <code>Truthcert1_work</code> · part of the E156 portfolio ·
+  <a href="https://mahmood726-cyber.github.io/e156/students.html">claim this paper on the student board</a>
+</footer>
+
+</div>
+</body>
+</html>
